@@ -1,8 +1,8 @@
 ﻿// CodeGear C++Builder
-// Copyright (c) 1995, 2016 by Embarcadero Technologies, Inc.
+// Copyright (c) 1995, 2014 by Embarcadero Technologies, Inc.
 // All rights reserved
 
-// (DO NOT EDIT: machine generated header) 'VirtualTrees.ClipBoard.pas' rev: 31.00 (Windows)
+// (DO NOT EDIT: machine generated header) 'VirtualTrees.ClipBoard.pas' rev: 28.00 (Windows)
 
 #ifndef Virtualtrees_ClipboardHPP
 #define Virtualtrees_ClipboardHPP
@@ -12,12 +12,12 @@
 #pragma option -w-      // All warnings off
 #pragma option -Vx      // Zero-length empty class member 
 #pragma pack(push,8)
-#include <System.hpp>
-#include <SysInit.hpp>
-#include <Winapi.Windows.hpp>
-#include <Winapi.ActiveX.hpp>
-#include <System.Classes.hpp>
-#include <VirtualTrees.hpp>
+#include <System.hpp>	// Pascal unit
+#include <SysInit.hpp>	// Pascal unit
+#include <Winapi.Windows.hpp>	// Pascal unit
+#include <Winapi.ActiveX.hpp>	// Pascal unit
+#include <System.Classes.hpp>	// Pascal unit
+#include <VirtualTrees.hpp>	// Pascal unit
 
 //-- user supplied -----------------------------------------------------------
 
@@ -25,10 +25,6 @@ namespace Virtualtrees
 {
 namespace Clipboard
 {
-//-- forward type declarations -----------------------------------------------
-struct TClipboardFormatEntry;
-class DELPHICLASS TClipboardFormatListEntry;
-class DELPHICLASS TClipboardFormatList;
 //-- type declarations -------------------------------------------------------
 struct DECLSPEC_DRECORD TClipboardFormatEntry
 {
@@ -40,6 +36,7 @@ public:
 
 typedef System::StaticArray<TClipboardFormatEntry, 17> Virtualtrees_Clipboard__1;
 
+class DELPHICLASS TClipboardFormatListEntry;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TClipboardFormatListEntry : public System::TObject
 {
@@ -58,6 +55,7 @@ public:
 
 #pragma pack(pop)
 
+class DELPHICLASS TClipboardFormatList;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TClipboardFormatList : public System::TObject
 {

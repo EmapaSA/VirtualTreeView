@@ -1,8 +1,8 @@
 ﻿// CodeGear C++Builder
-// Copyright (c) 1995, 2016 by Embarcadero Technologies, Inc.
+// Copyright (c) 1995, 2014 by Embarcadero Technologies, Inc.
 // All rights reserved
 
-// (DO NOT EDIT: machine generated header) 'VirtualTrees.pas' rev: 31.00 (Windows)
+// (DO NOT EDIT: machine generated header) 'VirtualTrees.pas' rev: 28.00 (Windows)
 
 #ifndef VirtualtreesHPP
 #define VirtualtreesHPP
@@ -12,28 +12,28 @@
 #pragma option -w-      // All warnings off
 #pragma option -Vx      // Zero-length empty class member 
 #pragma pack(push,8)
-#include <System.hpp>
-#include <SysInit.hpp>
-#include <Winapi.Windows.hpp>
-#include <Winapi.oleacc.hpp>
-#include <Winapi.Messages.hpp>
-#include <System.SysUtils.hpp>
-#include <Vcl.Graphics.hpp>
-#include <Vcl.Controls.hpp>
-#include <Vcl.Forms.hpp>
-#include <Vcl.ImgList.hpp>
-#include <Winapi.ActiveX.hpp>
-#include <Vcl.StdCtrls.hpp>
-#include <System.Classes.hpp>
-#include <Vcl.Menus.hpp>
-#include <Vcl.Printers.hpp>
-#include <System.Types.hpp>
-#include <Winapi.CommCtrl.hpp>
-#include <Vcl.Themes.hpp>
-#include <Winapi.UxTheme.hpp>
-#include <Winapi.ShlObj.hpp>
-#include <System.UITypes.hpp>
-#include <System.Generics.Collections.hpp>
+#include <System.hpp>	// Pascal unit
+#include <SysInit.hpp>	// Pascal unit
+#include <Winapi.Windows.hpp>	// Pascal unit
+#include <Winapi.oleacc.hpp>	// Pascal unit
+#include <Winapi.Messages.hpp>	// Pascal unit
+#include <System.SysUtils.hpp>	// Pascal unit
+#include <Vcl.Graphics.hpp>	// Pascal unit
+#include <Vcl.Controls.hpp>	// Pascal unit
+#include <Vcl.Forms.hpp>	// Pascal unit
+#include <Vcl.ImgList.hpp>	// Pascal unit
+#include <Winapi.ActiveX.hpp>	// Pascal unit
+#include <Vcl.StdCtrls.hpp>	// Pascal unit
+#include <System.Classes.hpp>	// Pascal unit
+#include <Vcl.Menus.hpp>	// Pascal unit
+#include <Vcl.Printers.hpp>	// Pascal unit
+#include <System.Types.hpp>	// Pascal unit
+#include <Winapi.CommCtrl.hpp>	// Pascal unit
+#include <Vcl.Themes.hpp>	// Pascal unit
+#include <Winapi.UxTheme.hpp>	// Pascal unit
+#include <Winapi.ShlObj.hpp>	// Pascal unit
+#include <System.UITypes.hpp>	// Pascal unit
+#include <System.Generics.Collections.hpp>	// Pascal unit
 
 //-- user supplied -----------------------------------------------------------
 #include <objidl.h>
@@ -45,57 +45,10 @@
 
 namespace Virtualtrees
 {
-//-- forward type declarations -----------------------------------------------
-class DELPHICLASS EVirtualTreeError;
-/*Helper*/typedef void *TCheckStateHelper;
-
-struct TCacheEntry;
-class DELPHICLASS TCustomVirtualTreeOptions;
-class DELPHICLASS TVirtualTreeOptions;
-struct TVTReference;
-struct TVirtualNode;
-struct TVTHeaderHitInfo;
-struct THitInfo;
-struct TInternalStgMedium;
-class DELPHICLASS TEnumFormatEtc;
-__interface IVTDragManager;
-typedef System::DelphiInterface<IVTDragManager> _di_IVTDragManager;
-class DELPHICLASS TVTDataObject;
-class DELPHICLASS TVTDragManager;
-struct TVTHintData;
-class DELPHICLASS TVirtualTreeHintWindow;
-class DELPHICLASS TVTDragImage;
-/*Helper*/typedef void *TSortDirectionHelper;
-
-class DELPHICLASS TVirtualTreeColumn;
-class DELPHICLASS TVirtualTreeColumns;
-class DELPHICLASS TVTFixedAreaConstraints;
-class DELPHICLASS TVTHeader;
-__interface IVTEditLink;
-typedef System::DelphiInterface<IVTEditLink> _di_IVTEditLink;
-struct THeaderPaintInfo;
-class DELPHICLASS TScrollBarOptions;
-class DELPHICLASS TVTColors;
-struct TVTImageInfo;
-struct TVTPaintInfo;
-class DELPHICLASS TClipboardFormats;
-__interface TVTGetNodeProc;
-typedef System::DelphiInterface<TVTGetNodeProc> _di_TVTGetNodeProc;
-struct TVTVirtualNodeEnumerator;
-struct TVTVirtualNodeEnumeration;
-class DELPHICLASS TBaseVirtualTree;
-class DELPHICLASS TCustomStringTreeOptions;
-class DELPHICLASS TStringTreeOptions;
-class DELPHICLASS TVTEdit;
-class DELPHICLASS TStringEditLink;
-struct TVSTGetCellTextEventArgs;
-class DELPHICLASS TCustomVirtualStringTree;
-class DELPHICLASS TVirtualStringTree;
-class DELPHICLASS TCustomVirtualDrawTree;
-class DELPHICLASS TVirtualDrawTree;
 //-- type declarations -------------------------------------------------------
-using System::Uitypes::TImageIndex;
+typedef System::Uitypes::TImageIndex TImageIndex;
 
+class DELPHICLASS EVirtualTreeError;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION EVirtualTreeError : public System::Sysutils::Exception
 {
@@ -103,17 +56,17 @@ class PASCALIMPLEMENTATION EVirtualTreeError : public System::Sysutils::Exceptio
 	
 public:
 	/* Exception.Create */ inline __fastcall EVirtualTreeError(const System::UnicodeString Msg) : System::Sysutils::Exception(Msg) { }
-	/* Exception.CreateFmt */ inline __fastcall EVirtualTreeError(const System::UnicodeString Msg, const System::TVarRec *Args, const int Args_High) : System::Sysutils::Exception(Msg, Args, Args_High) { }
+	/* Exception.CreateFmt */ inline __fastcall EVirtualTreeError(const System::UnicodeString Msg, System::TVarRec const *Args, const int Args_High) : System::Sysutils::Exception(Msg, Args, Args_High) { }
 	/* Exception.CreateRes */ inline __fastcall EVirtualTreeError(NativeUInt Ident)/* overload */ : System::Sysutils::Exception(Ident) { }
 	/* Exception.CreateRes */ inline __fastcall EVirtualTreeError(System::PResStringRec ResStringRec)/* overload */ : System::Sysutils::Exception(ResStringRec) { }
-	/* Exception.CreateResFmt */ inline __fastcall EVirtualTreeError(NativeUInt Ident, const System::TVarRec *Args, const int Args_High)/* overload */ : System::Sysutils::Exception(Ident, Args, Args_High) { }
-	/* Exception.CreateResFmt */ inline __fastcall EVirtualTreeError(System::PResStringRec ResStringRec, const System::TVarRec *Args, const int Args_High)/* overload */ : System::Sysutils::Exception(ResStringRec, Args, Args_High) { }
+	/* Exception.CreateResFmt */ inline __fastcall EVirtualTreeError(NativeUInt Ident, System::TVarRec const *Args, const int Args_High)/* overload */ : System::Sysutils::Exception(Ident, Args, Args_High) { }
+	/* Exception.CreateResFmt */ inline __fastcall EVirtualTreeError(System::PResStringRec ResStringRec, System::TVarRec const *Args, const int Args_High)/* overload */ : System::Sysutils::Exception(ResStringRec, Args, Args_High) { }
 	/* Exception.CreateHelp */ inline __fastcall EVirtualTreeError(const System::UnicodeString Msg, int AHelpContext) : System::Sysutils::Exception(Msg, AHelpContext) { }
-	/* Exception.CreateFmtHelp */ inline __fastcall EVirtualTreeError(const System::UnicodeString Msg, const System::TVarRec *Args, const int Args_High, int AHelpContext) : System::Sysutils::Exception(Msg, Args, Args_High, AHelpContext) { }
+	/* Exception.CreateFmtHelp */ inline __fastcall EVirtualTreeError(const System::UnicodeString Msg, System::TVarRec const *Args, const int Args_High, int AHelpContext) : System::Sysutils::Exception(Msg, Args, Args_High, AHelpContext) { }
 	/* Exception.CreateResHelp */ inline __fastcall EVirtualTreeError(NativeUInt Ident, int AHelpContext)/* overload */ : System::Sysutils::Exception(Ident, AHelpContext) { }
 	/* Exception.CreateResHelp */ inline __fastcall EVirtualTreeError(System::PResStringRec ResStringRec, int AHelpContext)/* overload */ : System::Sysutils::Exception(ResStringRec, AHelpContext) { }
-	/* Exception.CreateResFmtHelp */ inline __fastcall EVirtualTreeError(System::PResStringRec ResStringRec, const System::TVarRec *Args, const int Args_High, int AHelpContext)/* overload */ : System::Sysutils::Exception(ResStringRec, Args, Args_High, AHelpContext) { }
-	/* Exception.CreateResFmtHelp */ inline __fastcall EVirtualTreeError(NativeUInt Ident, const System::TVarRec *Args, const int Args_High, int AHelpContext)/* overload */ : System::Sysutils::Exception(Ident, Args, Args_High, AHelpContext) { }
+	/* Exception.CreateResFmtHelp */ inline __fastcall EVirtualTreeError(System::PResStringRec ResStringRec, System::TVarRec const *Args, const int Args_High, int AHelpContext)/* overload */ : System::Sysutils::Exception(ResStringRec, Args, Args_High, AHelpContext) { }
+	/* Exception.CreateResFmtHelp */ inline __fastcall EVirtualTreeError(NativeUInt Ident, System::TVarRec const *Args, const int Args_High, int AHelpContext)/* overload */ : System::Sysutils::Exception(Ident, Args, Args_High, AHelpContext) { }
 	/* Exception.Destroy */ inline __fastcall virtual ~EVirtualTreeError(void) { }
 	
 };
@@ -149,6 +102,8 @@ typedef System::Set<THitPosition, THitPosition::hiAbove, THitPosition::hiLowerSp
 enum DECLSPEC_DENUM TCheckType : unsigned char { ctNone, ctTriStateCheckBox, ctCheckBox, ctRadioButton, ctButton };
 
 enum DECLSPEC_DENUM TCheckState : unsigned char { csUncheckedNormal, csUncheckedPressed, csCheckedNormal, csCheckedPressed, csMixedNormal, csMixedPressed, csUncheckedDisabled, csCheckedDisabled, csMixedDisabled };
+
+typedef void *TCheckStateHelper;
 
 enum DECLSPEC_DENUM TCheckImageKind : unsigned char { ckCustom, ckSystemDefault };
 
@@ -200,6 +155,7 @@ typedef System::Set<TVTOperationKind, TVTOperationKind::okAutoFitColumns, TVTOpe
 
 typedef System::TMetaClass* TVirtualTreeClass;
 
+struct TVirtualNode;
 typedef TVirtualNode *PVirtualNode;
 
 typedef int TColumnIndex;
@@ -218,6 +174,8 @@ typedef System::DynamicArray<TCacheEntry> TCache;
 
 typedef System::DynamicArray<PVirtualNode> TNodeArray;
 
+class DELPHICLASS TCustomVirtualTreeOptions;
+class DELPHICLASS TBaseVirtualTree;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TCustomVirtualTreeOptions : public System::Classes::TPersistent
 {
@@ -258,6 +216,7 @@ public:
 
 typedef System::TMetaClass* TTreeOptionsClass;
 
+class DELPHICLASS TVirtualTreeOptions;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TVirtualTreeOptions : public TCustomVirtualTreeOptions
 {
@@ -280,6 +239,7 @@ public:
 
 #pragma pack(pop)
 
+struct TVTReference;
 typedef TVTReference *PVTReference;
 
 struct DECLSPEC_DRECORD TVTReference
@@ -293,7 +253,6 @@ public:
 #pragma pack(push,1)
 struct DECLSPEC_DRECORD TVirtualNode
 {
-	
 private:
 	struct DECLSPEC_DRECORD _TVirtualNode__1
 	{
@@ -374,6 +333,7 @@ public:
 
 typedef System::DynamicArray<TInternalStgMedium> TInternalStgMediumArray;
 
+class DELPHICLASS TEnumFormatEtc;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TEnumFormatEtc : public System::TInterfacedObject
 {
@@ -402,7 +362,7 @@ public:
 	operator _di_IEnumFORMATETC()
 	{
 		_di_IEnumFORMATETC intf;
-		this->GetInterface(intf);
+		GetInterface(intf);
 		return intf;
 	}
 	#else
@@ -413,8 +373,12 @@ public:
 
 #pragma pack(pop)
 
+__interface IVTDragManager;
+typedef System::DelphiInterface<IVTDragManager> _di_IVTDragManager;
 __interface  INTERFACE_UUID("{C4B25559-14DA-446B-8901-0C879000EB16}") IVTDragManager  : public System::IInterface 
 {
+	
+public:
 	virtual void __stdcall ForceDragLeave(void) = 0 ;
 	virtual _di_IDataObject __stdcall GetDataObject(void) = 0 ;
 	virtual TBaseVirtualTree* __stdcall GetDragSource(void) = 0 ;
@@ -426,6 +390,7 @@ __interface  INTERFACE_UUID("{C4B25559-14DA-446B-8901-0C879000EB16}") IVTDragMan
 	__property bool IsDropTarget = {read=GetIsDropTarget};
 };
 
+class DELPHICLASS TVTDataObject;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TVTDataObject : public System::TInterfacedObject
 {
@@ -462,7 +427,7 @@ public:
 	virtual HRESULT __stdcall GetData(const tagFORMATETC &FormatEtcIn, /* out */ tagSTGMEDIUM &Medium);
 	virtual HRESULT __stdcall GetDataHere(const tagFORMATETC &FormatEtc, /* out */ tagSTGMEDIUM &Medium);
 	virtual HRESULT __stdcall QueryGetData(const tagFORMATETC &FormatEtc);
-	virtual HRESULT __stdcall SetData(const tagFORMATETC &FormatEtc, tagSTGMEDIUM &Medium, System::LongBool DoRelease);
+	virtual HRESULT __stdcall SetData(const tagFORMATETC &FormatEtc, tagSTGMEDIUM &Medium, BOOL DoRelease);
 private:
 	void *__IDataObject;	// IDataObject 
 	
@@ -472,7 +437,7 @@ public:
 	operator _di_IDataObject()
 	{
 		_di_IDataObject intf;
-		this->GetInterface(intf);
+		GetInterface(intf);
 		return intf;
 	}
 	#else
@@ -483,6 +448,7 @@ public:
 
 #pragma pack(pop)
 
+class DELPHICLASS TVTDragManager;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TVTDragManager : public System::TInterfacedObject
 {
@@ -494,7 +460,7 @@ private:
 	bool FIsDropTarget;
 	_di_IDataObject FDataObject;
 	_di_IDropTargetHelper FDropTargetHelper;
-	System::LongBool FFullDragging;
+	BOOL FFullDragging;
 	_di_IDataObject __stdcall GetDataObject(void);
 	TBaseVirtualTree* __stdcall GetDragSource(void);
 	bool __stdcall GetDropTargetHelperSupported(void);
@@ -509,7 +475,7 @@ public:
 	HRESULT __stdcall Drop(const _di_IDataObject DataObject, int KeyState, const System::Types::TPoint Pt, int &Effect);
 	void __stdcall ForceDragLeave(void);
 	HRESULT __stdcall GiveFeedback(int Effect);
-	HRESULT __stdcall QueryContinueDrag(System::LongBool EscapePressed, int KeyState);
+	HRESULT __stdcall QueryContinueDrag(BOOL EscapePressed, int KeyState);
 private:
 	void *__IDropTarget;	// IDropTarget 
 	void *__IDropSource;	// IDropSource 
@@ -521,7 +487,7 @@ public:
 	operator _di_IDropTarget()
 	{
 		_di_IDropTarget intf;
-		this->GetInterface(intf);
+		GetInterface(intf);
 		return intf;
 	}
 	#else
@@ -532,7 +498,7 @@ public:
 	operator _di_IDropSource()
 	{
 		_di_IDropSource intf;
-		this->GetInterface(intf);
+		GetInterface(intf);
 		return intf;
 	}
 	#else
@@ -543,7 +509,7 @@ public:
 	operator _di_IVTDragManager()
 	{
 		_di_IVTDragManager intf;
-		this->GetInterface(intf);
+		GetInterface(intf);
 		return intf;
 	}
 	#else
@@ -554,6 +520,7 @@ public:
 
 #pragma pack(pop)
 
+struct TVTHintData;
 typedef TVTHintData *PVTHintData;
 
 struct DECLSPEC_DRECORD TVTHintData
@@ -573,6 +540,7 @@ public:
 
 enum DECLSPEC_DENUM THintAnimationType : unsigned char { hatNone, hatFade, hatSlide, hatSystemDefault };
 
+class DELPHICLASS TVirtualTreeHintWindow;
 class PASCALIMPLEMENTATION TVirtualTreeHintWindow : public Vcl::Controls::THintWindow
 {
 	typedef Vcl::Controls::THintWindow inherited;
@@ -623,6 +591,7 @@ enum DECLSPEC_DENUM Virtualtrees__9 : unsigned char { disHidden, disInDrag, disP
 
 typedef System::Set<Virtualtrees__9, Virtualtrees__9::disHidden, Virtualtrees__9::disSystemSupport> TVTDragImageStates;
 
+class DELPHICLASS TVTDragImage;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TVTDragImage : public System::TObject
 {
@@ -676,6 +645,10 @@ enum DECLSPEC_DENUM TVTHeaderColumnLayout : unsigned char { blGlyphLeft, blGlyph
 
 enum DECLSPEC_DENUM TSortDirection : unsigned char { sdAscending, sdDescending };
 
+typedef void *TSortDirectionHelper;
+
+class DELPHICLASS TVirtualTreeColumn;
+class DELPHICLASS TVirtualTreeColumns;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TVirtualTreeColumn : public System::Classes::TCollectionItem
 {
@@ -803,13 +776,14 @@ typedef System::DynamicArray<unsigned> TCardinalArray;
 
 typedef System::DynamicArray<TColumnIndex> TIndexArray;
 
+class DELPHICLASS TVTHeader;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TVirtualTreeColumns : public System::Classes::TCollection
 {
 	typedef System::Classes::TCollection inherited;
 	
 public:
-	TVirtualTreeColumn* operator[](TColumnIndex Index) { return this->Items[Index]; }
+	TVirtualTreeColumn* operator[](TColumnIndex Index) { return Items[Index]; }
 	
 private:
 	TVTHeader* FHeader;
@@ -899,6 +873,7 @@ typedef System::TMetaClass* TVirtualTreeColumnsClass;
 
 typedef System::Int8 TVTConstraintPercent;
 
+class DELPHICLASS TVTFixedAreaConstraints;
 class PASCALIMPLEMENTATION TVTFixedAreaConstraints : public System::Classes::TPersistent
 {
 	typedef System::Classes::TPersistent inherited;
@@ -1075,8 +1050,12 @@ __published:
 
 typedef System::TMetaClass* TVTHeaderClass;
 
+__interface IVTEditLink;
+typedef System::DelphiInterface<IVTEditLink> _di_IVTEditLink;
 __interface  INTERFACE_UUID("{2BE3EAFA-5ACB-45B4-9D9A-B58BCC496E17}") IVTEditLink  : public System::IInterface 
 {
+	
+public:
 	virtual bool __stdcall BeginEdit(void) = 0 ;
 	virtual bool __stdcall CancelEdit(void) = 0 ;
 	virtual bool __stdcall EndEdit(void) = 0 ;
@@ -1148,6 +1127,7 @@ typedef void __fastcall (__closure *TVTColumnExportEvent)(TBaseVirtualTree* Send
 
 typedef void __fastcall (__closure *TVTTreeExportEvent)(TBaseVirtualTree* Sender, TVTExportType aExportType);
 
+class DELPHICLASS TScrollBarOptions;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TScrollBarOptions : public System::Classes::TPersistent
 {
@@ -1184,6 +1164,7 @@ public:
 
 #pragma pack(pop)
 
+class DELPHICLASS TVTColors;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TVTColors : public System::Classes::TPersistent
 {
@@ -1287,6 +1268,7 @@ enum DECLSPEC_DENUM TVTCellPaintMode : unsigned char { cpmPaint, cpmGetContentMa
 
 enum DECLSPEC_DENUM TVTCellContentMarginType : unsigned char { ccmtAllSides, ccmtTopLeftOnly, ccmtBottomRightOnly };
 
+class DELPHICLASS TClipboardFormats;
 class PASCALIMPLEMENTATION TClipboardFormats : public System::Classes::TStringList
 {
 	typedef System::Classes::TStringList inherited;
@@ -1305,8 +1287,12 @@ public:
 };
 
 
+__interface TVTGetNodeProc;
+typedef System::DelphiInterface<TVTGetNodeProc> _di_TVTGetNodeProc;
 __interface TVTGetNodeProc  : public System::IInterface 
 {
+	
+public:
 	virtual void __fastcall Invoke(TBaseVirtualTree* Sender, PVirtualNode Node, void * Data, bool &Abort) = 0 ;
 };
 
@@ -1506,6 +1492,7 @@ typedef PVirtualNode __fastcall (__closure *TGetNextNodeProc)(PVirtualNode Node,
 
 enum DECLSPEC_DENUM TVZVirtualNodeEnumerationMode : unsigned char { vneAll, vneChecked, vneChild, vneCutCopy, vneInitialized, vneLeaf, vneLevel, vneNoInit, vneSelected, vneVisible, vneVisibleChild, vneVisibleNoInitChild, vneVisibleNoInit };
 
+struct TVTVirtualNodeEnumeration;
 typedef TVTVirtualNodeEnumeration *PVTVirtualNodeEnumeration;
 
 struct DECLSPEC_DRECORD TVTVirtualNodeEnumerator
@@ -1982,7 +1969,7 @@ protected:
 	bool __fastcall CanSplitterResizeNode(const System::Types::TPoint &P, PVirtualNode Node, TColumnIndex Column);
 	virtual void __fastcall Change(PVirtualNode Node);
 	void __fastcall ChangeTreeStatesAsync(TChangeStates EnterStates, TChangeStates LeaveStates);
-	DYNAMIC void __fastcall ChangeScale(int M, int D, bool isDpiChange)/* overload */;
+	DYNAMIC void __fastcall ChangeScale(int M, int D);
 	virtual bool __fastcall CheckParentCheckState(PVirtualNode Node, TCheckState NewCheckState);
 	virtual void __fastcall ClearSelection(bool pFireChangeEvent)/* overload */;
 	virtual void __fastcall ClearTempCache(void);
@@ -2616,11 +2603,6 @@ public:
 public:
 	/* TWinControl.CreateParented */ inline __fastcall TBaseVirtualTree(HWND ParentWindow) : Vcl::Controls::TCustomControl(ParentWindow) { }
 	
-	/* Hoisted overloads: */
-	
-protected:
-	DYNAMIC inline void __fastcall  ChangeScale(int M, int D){ Vcl::Controls::TControl::ChangeScale(M, D); }
-	
 };
 
 
@@ -2628,6 +2610,7 @@ enum DECLSPEC_DENUM TVTStringOption : unsigned char { toSaveCaptions, toShowStat
 
 typedef System::Set<TVTStringOption, TVTStringOption::toSaveCaptions, TVTStringOption::toAutoAcceptEditChange> TVTStringOptions;
 
+class DELPHICLASS TCustomStringTreeOptions;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TCustomStringTreeOptions : public TCustomVirtualTreeOptions
 {
@@ -2650,6 +2633,7 @@ public:
 
 #pragma pack(pop)
 
+class DELPHICLASS TStringTreeOptions;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TStringTreeOptions : public TCustomStringTreeOptions
 {
@@ -2674,6 +2658,8 @@ public:
 
 #pragma pack(pop)
 
+class DELPHICLASS TVTEdit;
+class DELPHICLASS TStringEditLink;
 class PASCALIMPLEMENTATION TVTEdit : public Vcl::Stdctrls::TCustomEdit
 {
 	typedef Vcl::Stdctrls::TCustomEdit inherited;
@@ -2712,6 +2698,7 @@ public:
 };
 
 
+class DELPHICLASS TCustomVirtualStringTree;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TStringEditLink : public System::TInterfacedObject
 {
@@ -2751,7 +2738,7 @@ public:
 	operator _di_IVTEditLink()
 	{
 		_di_IVTEditLink intf;
-		this->GetInterface(intf);
+		GetInterface(intf);
 		return intf;
 	}
 	#else
@@ -2909,6 +2896,7 @@ protected:
 };
 
 
+class DELPHICLASS TVirtualStringTree;
 class PASCALIMPLEMENTATION TVirtualStringTree : public TCustomVirtualStringTree
 {
 	typedef TCustomVirtualStringTree inherited;
@@ -3172,6 +3160,7 @@ typedef void __fastcall (__closure *TVTGetCellContentMarginEvent)(TBaseVirtualTr
 
 typedef void __fastcall (__closure *TVTGetNodeWidthEvent)(TBaseVirtualTree* Sender, Vcl::Graphics::TCanvas* HintCanvas, PVirtualNode Node, TColumnIndex Column, int &NodeWidth);
 
+class DELPHICLASS TCustomVirtualDrawTree;
 class PASCALIMPLEMENTATION TCustomVirtualDrawTree : public TBaseVirtualTree
 {
 	typedef TBaseVirtualTree inherited;
@@ -3199,6 +3188,7 @@ public:
 };
 
 
+class DELPHICLASS TVirtualDrawTree;
 class PASCALIMPLEMENTATION TVirtualDrawTree : public TCustomVirtualDrawTree
 {
 	typedef TCustomVirtualDrawTree inherited;
@@ -3441,7 +3431,7 @@ public:
 
 
 //-- var, const, procedure ---------------------------------------------------
-#define VTVersion L"6.4.1"
+#define VTVersion L"6.5.0"
 static const System::Int8 VTTreeStreamVersion = System::Int8(0x2);
 static const System::Int8 VTHeaderStreamVersion = System::Int8(0x6);
 static const System::Word CacheThreshold = System::Word(0x7d0);
@@ -3516,9 +3506,9 @@ extern DELPHI_PACKAGE System::Word CF_CSV;
 extern DELPHI_PACKAGE bool MMXAvailable;
 extern DELPHI_PACKAGE bool IsWinVistaOrAbove;
 #define DefaultPaintOptions (System::Set<TVTPaintOption, TVTPaintOption::toHideFocusRect, TVTPaintOption::toShowFilteredNodes>() << TVTPaintOption::toShowButtons << TVTPaintOption::toShowDropmark << TVTPaintOption::toShowRoot << TVTPaintOption::toShowTreeLines << TVTPaintOption::toThemeAware << TVTPaintOption::toUseBlendedImages )
-#define DefaultAnimationOptions System::Set<System::Byte>()
+#define DefaultAnimationOptions EMPTYSET
 #define DefaultAutoOptions (System::Set<TVTAutoOption, TVTAutoOption::toAutoDropExpand, TVTAutoOption::toAutoBidiColumnOrdering>() << TVTAutoOption::toAutoDropExpand << TVTAutoOption::toAutoScrollOnExpand << TVTAutoOption::toAutoSort << TVTAutoOption::toAutoTristateTracking << TVTAutoOption::toAutoDeleteMovedNodes << TVTAutoOption::toAutoChangeScale )
-#define DefaultSelectionOptions System::Set<System::Byte>()
+#define DefaultSelectionOptions EMPTYSET
 #define DefaultMiscOptions (System::Set<TVTMiscOption, TVTMiscOption::toAcceptOLEDrop, TVTMiscOption::toReverseFullExpandHotKey>() << TVTMiscOption::toAcceptOLEDrop << TVTMiscOption::toFullRepaintOnResize << TVTMiscOption::toInitOnSave << TVTMiscOption::toToggleOnDblClick << TVTMiscOption::toWheelPanning << TVTMiscOption::toEditOnClick )
 #define DefaultColumnOptions (System::Set<TVTColumnOption, TVTColumnOption::coAllowClick, TVTColumnOption::coStyleColor>() << TVTColumnOption::coAllowClick << TVTColumnOption::coDraggable << TVTColumnOption::coEnabled << TVTColumnOption::coParentBidiMode << TVTColumnOption::coParentColor << TVTColumnOption::coResizable << TVTColumnOption::coShowDropMark << TVTColumnOption::coVisible << TVTColumnOption::coAllowFocus << TVTColumnOption::coEditable )
 #define DefaultStringOptions (System::Set<TVTStringOption, TVTStringOption::toSaveCaptions, TVTStringOption::toAutoAcceptEditChange>() << TVTStringOption::toSaveCaptions << TVTStringOption::toAutoAcceptEditChange )
