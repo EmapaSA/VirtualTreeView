@@ -1,8 +1,8 @@
 ﻿// CodeGear C++Builder
-// Copyright (c) 1995, 2016 by Embarcadero Technologies, Inc.
+// Copyright (c) 1995, 2014 by Embarcadero Technologies, Inc.
 // All rights reserved
 
-// (DO NOT EDIT: machine generated header) 'VTAccessibility.pas' rev: 31.00 (Windows)
+// (DO NOT EDIT: machine generated header) 'VTAccessibility.pas' rev: 28.00 (Windows)
 
 #ifndef VtaccessibilityHPP
 #define VtaccessibilityHPP
@@ -12,29 +12,23 @@
 #pragma option -w-      // All warnings off
 #pragma option -Vx      // Zero-length empty class member 
 #pragma pack(push,8)
-#include <System.hpp>
-#include <SysInit.hpp>
-#include <Winapi.Windows.hpp>
-#include <System.Classes.hpp>
-#include <Winapi.ActiveX.hpp>
-#include <System.Types.hpp>
-#include <Winapi.oleacc.hpp>
-#include <VirtualTrees.hpp>
-#include <VTAccessibilityFactory.hpp>
-#include <Vcl.Controls.hpp>
+#include <System.hpp>	// Pascal unit
+#include <SysInit.hpp>	// Pascal unit
+#include <Winapi.Windows.hpp>	// Pascal unit
+#include <System.Classes.hpp>	// Pascal unit
+#include <Winapi.ActiveX.hpp>	// Pascal unit
+#include <System.Types.hpp>	// Pascal unit
+#include <Winapi.oleacc.hpp>	// Pascal unit
+#include <VirtualTrees.hpp>	// Pascal unit
+#include <VTAccessibilityFactory.hpp>	// Pascal unit
+#include <Vcl.Controls.hpp>	// Pascal unit
 
 //-- user supplied -----------------------------------------------------------
 
 namespace Vtaccessibility
 {
-//-- forward type declarations -----------------------------------------------
-class DELPHICLASS TVirtualTreeAccessibility;
-class DELPHICLASS TVirtualTreeItemAccessibility;
-class DELPHICLASS TVTMultiColumnItemAccessibility;
-class DELPHICLASS TVTDefaultAccessibleProvider;
-class DELPHICLASS TVTDefaultAccessibleItemProvider;
-class DELPHICLASS TVTMultiColumnAccessibleItemProvider;
 //-- type declarations -------------------------------------------------------
+class DELPHICLASS TVirtualTreeAccessibility;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TVirtualTreeAccessibility : public System::TInterfacedObject
 {
@@ -82,7 +76,7 @@ public:
 	operator _di_IAccessible()
 	{
 		_di_IAccessible intf;
-		this->GetInterface(intf);
+		GetInterface(intf);
 		return intf;
 	}
 	#else
@@ -93,7 +87,7 @@ public:
 	operator _di_IDispatch()
 	{
 		_di_IDispatch intf;
-		this->GetInterface(intf);
+		GetInterface(intf);
 		return intf;
 	}
 	#else
@@ -104,6 +98,7 @@ public:
 
 #pragma pack(pop)
 
+class DELPHICLASS TVirtualTreeItemAccessibility;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TVirtualTreeItemAccessibility : public TVirtualTreeAccessibility
 {
@@ -135,7 +130,7 @@ public:
 	operator _di_IAccessible()
 	{
 		_di_IAccessible intf;
-		this->GetInterface(intf);
+		GetInterface(intf);
 		return intf;
 	}
 	#else
@@ -146,6 +141,7 @@ public:
 
 #pragma pack(pop)
 
+class DELPHICLASS TVTMultiColumnItemAccessibility;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TVTMultiColumnItemAccessibility : public TVirtualTreeItemAccessibility
 {
@@ -172,7 +168,7 @@ public:
 	operator _di_IAccessible()
 	{
 		_di_IAccessible intf;
-		this->GetInterface(intf);
+		GetInterface(intf);
 		return intf;
 	}
 	#else
@@ -183,6 +179,7 @@ public:
 
 #pragma pack(pop)
 
+class DELPHICLASS TVTDefaultAccessibleProvider;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TVTDefaultAccessibleProvider : public System::TInterfacedObject
 {
@@ -204,6 +201,7 @@ public:
 
 #pragma pack(pop)
 
+class DELPHICLASS TVTDefaultAccessibleItemProvider;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TVTDefaultAccessibleItemProvider : public System::TInterfacedObject
 {
@@ -225,6 +223,7 @@ public:
 
 #pragma pack(pop)
 
+class DELPHICLASS TVTMultiColumnAccessibleItemProvider;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TVTMultiColumnAccessibleItemProvider : public System::TInterfacedObject
 {

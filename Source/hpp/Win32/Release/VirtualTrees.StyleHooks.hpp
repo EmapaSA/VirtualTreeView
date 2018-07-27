@@ -1,8 +1,8 @@
 ﻿// CodeGear C++Builder
-// Copyright (c) 1995, 2016 by Embarcadero Technologies, Inc.
+// Copyright (c) 1995, 2014 by Embarcadero Technologies, Inc.
 // All rights reserved
 
-// (DO NOT EDIT: machine generated header) 'VirtualTrees.StyleHooks.pas' rev: 31.00 (Windows)
+// (DO NOT EDIT: machine generated header) 'VirtualTrees.StyleHooks.pas' rev: 28.00 (Windows)
 
 #ifndef Virtualtrees_StylehooksHPP
 #define Virtualtrees_StylehooksHPP
@@ -12,15 +12,15 @@
 #pragma option -w-      // All warnings off
 #pragma option -Vx      // Zero-length empty class member 
 #pragma pack(push,8)
-#include <System.hpp>
-#include <SysInit.hpp>
-#include <Winapi.Windows.hpp>
-#include <Winapi.Messages.hpp>
-#include <Winapi.UxTheme.hpp>
-#include <System.Classes.hpp>
-#include <Vcl.Themes.hpp>
-#include <Vcl.Controls.hpp>
-#include <System.Types.hpp>
+#include <System.hpp>	// Pascal unit
+#include <SysInit.hpp>	// Pascal unit
+#include <Winapi.Windows.hpp>	// Pascal unit
+#include <Winapi.Messages.hpp>	// Pascal unit
+#include <Winapi.UxTheme.hpp>	// Pascal unit
+#include <System.Classes.hpp>	// Pascal unit
+#include <Vcl.Themes.hpp>	// Pascal unit
+#include <Vcl.Controls.hpp>	// Pascal unit
+#include <System.Types.hpp>	// Pascal unit
 
 //-- user supplied -----------------------------------------------------------
 
@@ -28,14 +28,12 @@ namespace Virtualtrees
 {
 namespace Stylehooks
 {
-//-- forward type declarations -----------------------------------------------
-class DELPHICLASS TVclStyleScrollBarsHook;
 //-- type declarations -------------------------------------------------------
+class DELPHICLASS TVclStyleScrollBarsHook;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TVclStyleScrollBarsHook : public Vcl::Themes::TMouseTrackControlStyleHook
 {
 	typedef Vcl::Themes::TMouseTrackControlStyleHook inherited;
-	
 	
 private:
 	class DELPHICLASS TVclStyleScrollBarWindow;
@@ -44,7 +42,7 @@ private:
 	{
 		typedef Vcl::Controls::TWinControl inherited;
 		
-	private:
+private:
 		TVclStyleScrollBarsHook* FScrollBarWindowOwner;
 		bool FScrollBarVertical;
 		bool FScrollBarVisible;
@@ -53,16 +51,16 @@ private:
 		HIDESBASE MESSAGE void __fastcall WMEraseBkgnd(Winapi::Messages::TMessage &Msg);
 		HIDESBASE MESSAGE void __fastcall WMPaint(Winapi::Messages::TWMPaint &Msg);
 		
-	protected:
+protected:
 		virtual void __fastcall CreateParams(Vcl::Controls::TCreateParams &Params);
 		
-	public:
+public:
 		__fastcall virtual TVclStyleScrollBarWindow(System::Classes::TComponent* AOwner);
 		__property TVclStyleScrollBarsHook* ScrollBarWindowOwner = {read=FScrollBarWindowOwner, write=FScrollBarWindowOwner};
 		__property bool ScrollBarVertical = {read=FScrollBarVertical, write=FScrollBarVertical, nodefault};
 		__property bool ScrollBarVisible = {read=FScrollBarVisible, write=FScrollBarVisible, nodefault};
 		__property bool ScrollBarEnabled = {read=FScrollBarEnabled, write=FScrollBarEnabled, nodefault};
-	public:
+public:
 		/* TWinControl.CreateParented */ inline __fastcall TVclStyleScrollBarWindow(HWND ParentWindow) : Vcl::Controls::TWinControl(ParentWindow) { }
 		/* TWinControl.Destroy */ inline __fastcall virtual ~TVclStyleScrollBarWindow(void) { }
 		

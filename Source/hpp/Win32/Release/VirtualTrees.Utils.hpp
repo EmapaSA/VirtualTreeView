@@ -1,8 +1,8 @@
 ﻿// CodeGear C++Builder
-// Copyright (c) 1995, 2016 by Embarcadero Technologies, Inc.
+// Copyright (c) 1995, 2014 by Embarcadero Technologies, Inc.
 // All rights reserved
 
-// (DO NOT EDIT: machine generated header) 'VirtualTrees.Utils.pas' rev: 31.00 (Windows)
+// (DO NOT EDIT: machine generated header) 'VirtualTrees.Utils.pas' rev: 28.00 (Windows)
 
 #ifndef Virtualtrees_UtilsHPP
 #define Virtualtrees_UtilsHPP
@@ -12,12 +12,12 @@
 #pragma option -w-      // All warnings off
 #pragma option -Vx      // Zero-length empty class member 
 #pragma pack(push,8)
-#include <System.hpp>
-#include <SysInit.hpp>
-#include <Winapi.Windows.hpp>
-#include <System.Types.hpp>
-#include <Vcl.Graphics.hpp>
-#include <Vcl.ImgList.hpp>
+#include <System.hpp>	// Pascal unit
+#include <SysInit.hpp>	// Pascal unit
+#include <Winapi.Windows.hpp>	// Pascal unit
+#include <System.Types.hpp>	// Pascal unit
+#include <Vcl.Graphics.hpp>	// Pascal unit
+#include <Vcl.ImgList.hpp>	// Pascal unit
 
 //-- user supplied -----------------------------------------------------------
 
@@ -25,7 +25,6 @@ namespace Virtualtrees
 {
 namespace Utils
 {
-//-- forward type declarations -----------------------------------------------
 //-- type declarations -------------------------------------------------------
 enum DECLSPEC_DENUM TBlendMode : unsigned char { bmConstantAlpha, bmPerPixelAlpha, bmMasterAlpha, bmConstantAlphaAndColor };
 

@@ -1,8 +1,8 @@
 ﻿// CodeGear C++Builder
-// Copyright (c) 1995, 2016 by Embarcadero Technologies, Inc.
+// Copyright (c) 1995, 2014 by Embarcadero Technologies, Inc.
 // All rights reserved
 
-// (DO NOT EDIT: machine generated header) 'VirtualTrees.Classes.pas' rev: 31.00 (Windows)
+// (DO NOT EDIT: machine generated header) 'VirtualTrees.Classes.pas' rev: 28.00 (Windows)
 
 #ifndef Virtualtrees_ClassesHPP
 #define Virtualtrees_ClassesHPP
@@ -12,9 +12,9 @@
 #pragma option -w-      // All warnings off
 #pragma option -Vx      // Zero-length empty class member 
 #pragma pack(push,8)
-#include <System.hpp>
-#include <SysInit.hpp>
-#include <Winapi.Windows.hpp>
+#include <System.hpp>	// Pascal unit
+#include <SysInit.hpp>	// Pascal unit
+#include <Winapi.Windows.hpp>	// Pascal unit
 
 //-- user supplied -----------------------------------------------------------
 
@@ -22,11 +22,8 @@ namespace Virtualtrees
 {
 namespace Classes
 {
-//-- forward type declarations -----------------------------------------------
-class DELPHICLASS TBufferedRawByteString;
-class DELPHICLASS TBufferedString;
-class DELPHICLASS TCriticalSection;
 //-- type declarations -------------------------------------------------------
+class DELPHICLASS TBufferedRawByteString;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TBufferedRawByteString : public System::TObject
 {
@@ -50,6 +47,7 @@ public:
 
 #pragma pack(pop)
 
+class DELPHICLASS TBufferedString;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TBufferedString : public System::TObject
 {
@@ -73,6 +71,7 @@ public:
 
 #pragma pack(pop)
 
+class DELPHICLASS TCriticalSection;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TCriticalSection : public System::TObject
 {
