@@ -2485,7 +2485,7 @@ type
     function CanSplitterResizeNode(P: TPoint; Node: PVirtualNode; Column: TColumnIndex): Boolean;
     procedure Change(Node: PVirtualNode); virtual;
     procedure ChangeTreeStatesAsync(EnterStates, LeaveStates: TChangeStates);
-    procedure ChangeScale(M, D: Integer {$if CompilerVersion >= 31}; isDpiChange: Boolean{$ifend}); override;
+    procedure ChangeScale(M, D: Integer; isDpiChange: Boolean); override;
     function CheckParentCheckState(Node: PVirtualNode; NewCheckState: TCheckState): Boolean; virtual;
     procedure ClearSelection(pFireChangeEvent: Boolean); overload; virtual;
     procedure ClearTempCache; virtual;

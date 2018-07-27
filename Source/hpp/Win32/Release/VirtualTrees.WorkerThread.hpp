@@ -1,8 +1,8 @@
 ﻿// CodeGear C++Builder
-// Copyright (c) 1995, 2014 by Embarcadero Technologies, Inc.
+// Copyright (c) 1995, 2016 by Embarcadero Technologies, Inc.
 // All rights reserved
 
-// (DO NOT EDIT: machine generated header) 'VirtualTrees.WorkerThread.pas' rev: 28.00 (Windows)
+// (DO NOT EDIT: machine generated header) 'VirtualTrees.WorkerThread.pas' rev: 31.00 (Windows)
 
 #ifndef Virtualtrees_WorkerthreadHPP
 #define Virtualtrees_WorkerthreadHPP
@@ -12,10 +12,10 @@
 #pragma option -w-      // All warnings off
 #pragma option -Vx      // Zero-length empty class member 
 #pragma pack(push,8)
-#include <System.hpp>	// Pascal unit
-#include <SysInit.hpp>	// Pascal unit
-#include <System.Classes.hpp>	// Pascal unit
-#include <VirtualTrees.hpp>	// Pascal unit
+#include <System.hpp>
+#include <SysInit.hpp>
+#include <System.Classes.hpp>
+#include <VirtualTrees.hpp>
 
 //-- user supplied -----------------------------------------------------------
 
@@ -23,8 +23,9 @@ namespace Virtualtrees
 {
 namespace Workerthread
 {
-//-- type declarations -------------------------------------------------------
+//-- forward type declarations -----------------------------------------------
 class DELPHICLASS TWorkerThread;
+//-- type declarations -------------------------------------------------------
 class PASCALIMPLEMENTATION TWorkerThread : public System::Classes::TThread
 {
 	typedef System::Classes::TThread inherited;

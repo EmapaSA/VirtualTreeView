@@ -1,8 +1,8 @@
 ﻿// CodeGear C++Builder
-// Copyright (c) 1995, 2014 by Embarcadero Technologies, Inc.
+// Copyright (c) 1995, 2016 by Embarcadero Technologies, Inc.
 // All rights reserved
 
-// (DO NOT EDIT: machine generated header) 'VirtualTrees.Actions.pas' rev: 28.00 (Windows)
+// (DO NOT EDIT: machine generated header) 'VirtualTrees.Actions.pas' rev: 31.00 (Windows)
 
 #ifndef Virtualtrees_ActionsHPP
 #define Virtualtrees_ActionsHPP
@@ -12,14 +12,14 @@
 #pragma option -w-      // All warnings off
 #pragma option -Vx      // Zero-length empty class member 
 #pragma pack(push,8)
-#include <System.hpp>	// Pascal unit
-#include <SysInit.hpp>	// Pascal unit
-#include <System.Classes.hpp>	// Pascal unit
-#include <System.Actions.hpp>	// Pascal unit
-#include <Vcl.Controls.hpp>	// Pascal unit
-#include <Vcl.ActnList.hpp>	// Pascal unit
-#include <VirtualTrees.hpp>	// Pascal unit
-#include <System.UITypes.hpp>	// Pascal unit
+#include <System.hpp>
+#include <SysInit.hpp>
+#include <System.Classes.hpp>
+#include <System.Actions.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.ActnList.hpp>
+#include <VirtualTrees.hpp>
+#include <System.UITypes.hpp>
 
 //-- user supplied -----------------------------------------------------------
 
@@ -27,8 +27,18 @@ namespace Virtualtrees
 {
 namespace Actions
 {
-//-- type declarations -------------------------------------------------------
+//-- forward type declarations -----------------------------------------------
 class DELPHICLASS TVirtualTreeAction;
+class DELPHICLASS TVirtualTreePerItemAction;
+class DELPHICLASS TVirtualTreeCheckAll;
+class DELPHICLASS TVirtualTreeUncheckAll;
+class DELPHICLASS TVirtualTreeSelectAll;
+class DELPHICLASS TVirtualTreeForSelectedAction;
+class DELPHICLASS TVirtualTreeCopy;
+class DELPHICLASS TVirtualTreeCut;
+class DELPHICLASS TVirtualTreePaste;
+class DELPHICLASS TVirtualTreeDelete;
+//-- type declarations -------------------------------------------------------
 class PASCALIMPLEMENTATION TVirtualTreeAction : public Vcl::Actnlist::TCustomAction
 {
 	typedef Vcl::Actnlist::TCustomAction inherited;
@@ -72,7 +82,6 @@ public:
 };
 
 
-class DELPHICLASS TVirtualTreePerItemAction;
 class PASCALIMPLEMENTATION TVirtualTreePerItemAction : public TVirtualTreeAction
 {
 	typedef TVirtualTreeAction inherited;
@@ -98,7 +107,6 @@ public:
 };
 
 
-class DELPHICLASS TVirtualTreeCheckAll;
 class PASCALIMPLEMENTATION TVirtualTreeCheckAll : public TVirtualTreePerItemAction
 {
 	typedef TVirtualTreePerItemAction inherited;
@@ -117,7 +125,6 @@ public:
 };
 
 
-class DELPHICLASS TVirtualTreeUncheckAll;
 class PASCALIMPLEMENTATION TVirtualTreeUncheckAll : public TVirtualTreeCheckAll
 {
 	typedef TVirtualTreeCheckAll inherited;
@@ -130,7 +137,6 @@ public:
 };
 
 
-class DELPHICLASS TVirtualTreeSelectAll;
 class PASCALIMPLEMENTATION TVirtualTreeSelectAll : public TVirtualTreeAction
 {
 	typedef TVirtualTreeAction inherited;
@@ -147,7 +153,6 @@ public:
 };
 
 
-class DELPHICLASS TVirtualTreeForSelectedAction;
 class PASCALIMPLEMENTATION TVirtualTreeForSelectedAction : public TVirtualTreeAction
 {
 	typedef TVirtualTreeAction inherited;
@@ -160,7 +165,6 @@ public:
 };
 
 
-class DELPHICLASS TVirtualTreeCopy;
 class PASCALIMPLEMENTATION TVirtualTreeCopy : public TVirtualTreeForSelectedAction
 {
 	typedef TVirtualTreeForSelectedAction inherited;
@@ -176,7 +180,6 @@ public:
 };
 
 
-class DELPHICLASS TVirtualTreeCut;
 class PASCALIMPLEMENTATION TVirtualTreeCut : public TVirtualTreeForSelectedAction
 {
 	typedef TVirtualTreeForSelectedAction inherited;
@@ -192,7 +195,6 @@ public:
 };
 
 
-class DELPHICLASS TVirtualTreePaste;
 class PASCALIMPLEMENTATION TVirtualTreePaste : public TVirtualTreeForSelectedAction
 {
 	typedef TVirtualTreeForSelectedAction inherited;
@@ -208,7 +210,6 @@ public:
 };
 
 
-class DELPHICLASS TVirtualTreeDelete;
 class PASCALIMPLEMENTATION TVirtualTreeDelete : public TVirtualTreeForSelectedAction
 {
 	typedef TVirtualTreeForSelectedAction inherited;
